@@ -28,8 +28,8 @@ def mock_data_generator():
         times = [datetime.now() + timedelta(minutes=i) for i in range(10)]
         bin_data = {
             "levels": list(zip(times, levels)),
-            "image": "C:\\Users\\harvi\\Downloads\\download.jpeg",
-            "location": "123 Main St, Anytown USA",
+            "image": "Downloads\\img1.jpeg",
+            "location": "123 Main St, India",
             "alerts": "Bin level reached 80%",
         }
         yield bin_data
@@ -53,4 +53,4 @@ ui_thread.start()
 
 # Start the Gradio app
 data_generator = mock_data_generator()
-bin_status.launch(share=True, server_port=8080)
+bin_status.launch(share=True, server_port=#****)
